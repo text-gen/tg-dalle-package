@@ -1,3 +1,7 @@
-# Template's Package Template
-This is a template repo to facilitate the creation of new template packages for Text generator Plugin.
-# [How to create Templates package](https://bit.ly/3XTzL0z)
+# Dalle-2 Prompt Templates
+* You need to [configure OpenAI Key](https://text-gen.com/configure-api-key)
+
+# Prompts 
+| Prompt   | Usage                                     |
+|----------|-------------------------------------------|
+| **getPhoto** | Generate a photo about the selected text. |
