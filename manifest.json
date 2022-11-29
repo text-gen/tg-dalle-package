@@ -1,11 +1,11 @@
 {
-    "packageId": "default",
-    "name": "Default Prompts Package",
-    "version": "0.0.6",
+    "packageId": "dalle-2",
+    "name": "Dalle-2 prompts",
+    "version": "0.0.1",
 	"minTextGeneratorVersion": "0.1.0",
-	"description": "This is the main package that comes with Text Generator plugin in Obsidian",
+	"description": "The package contains some interessting Dalle-2 prompt templates",
     "author": "Noureddine Haouari",
-    "tags" : "writing, brainstorming",
+    "tags" : "photo, dalle-2",
 	"authorUrl": "https://www.buymeacoffee.com/haouarine",
-    "repo":"text-gen/gpt-3-prompt-templates"
+    "repo":"text-gen/dalle-2"
 }
