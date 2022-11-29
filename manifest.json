@@ -1,7 +1,7 @@
 {
 "packageId": "dalle-2",
 "name": "Dalle-2 prompts",
-"version": "0.0.1",
+"version": "0.0.2",
 "minTextGeneratorVersion": "0.1.0",
 "description": "The package contains some interessting Dalle-2 prompt templates",
 "author": "Noureddine Haouari",

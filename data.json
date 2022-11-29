@@ -1,5 +1,15 @@
 {
 "prompts":[
-"getPhoto"
+"getPhoto",
+"artBanksy",
+"artCyberpunk",
+"artDigital",
+"artNormanRockwell",
+"artSalvadorDali",
+"artSteampunk",
+"artTakashiMurakami",
+"artTimBurton",
+"artVanGogh",
+"artWarhol"
 ]
 }
