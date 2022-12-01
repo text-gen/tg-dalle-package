@@ -1,10 +1,10 @@
 ---
 PromptInfo:
- promptId: artTimBurton
- name: 🖼️ Generate a photo by Tim Burton
- description: select a text and photo with the style of Tim Burton will be generated using Dalle-2
+ promptId: qua85mm
+ name: 🖼️ Generate a 85mm lens photo 
+ description: Quite zoomed in photo, a lot of background blur and detail on subject
  author: Prompt Engineering Guide
- tags: photo, dalle-2,art
+ tags: photo, dalle-2,quality, lens
  version: 0.0.1
 config:
  append:
@@ -18,4 +18,4 @@ bodyParams:
 reqParams:
  url: "https://api.openai.com/v1/images/generations"
 ---
-{{selection}},by Tim Burton
+{{selection}},85mm lens

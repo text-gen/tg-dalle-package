@@ -1,10 +1,10 @@
 ---
 PromptInfo:
- promptId: artTimBurton
- name: 🖼️ Generate a photo by Tim Burton
- description: select a text and photo with the style of Tim Burton will be generated using Dalle-2
+ promptId: ligCinematic
+ name: 🖼️ Generate a Cinematic Lighting photo 
+ description: Movie-like imagery with dramatic shadowing and very strong vibrancy, it also seems to add sun rays whenever it can.
  author: Prompt Engineering Guide
- tags: photo, dalle-2,art
+ tags: photo, dalle-2, lighting
  version: 0.0.1
 config:
  append:
@@ -18,4 +18,4 @@ bodyParams:
 reqParams:
  url: "https://api.openai.com/v1/images/generations"
 ---
-{{selection}},by Tim Burton
+{{selection}}, Cinematic Lighting

@@ -1,8 +1,8 @@
 ---
 PromptInfo:
- promptId: artTimBurton
- name: 🖼️ Generate a photo by Tim Burton
- description: select a text and photo with the style of Tim Burton will be generated using Dalle-2
+ promptId: artColoringBook
+ name: 🖼️ Generate a coloring book photo 
+ description: select a text and photo with the style of coloring book will be generated using Dalle-2
  author: Prompt Engineering Guide
  tags: photo, dalle-2,art
  version: 0.0.1
@@ -18,4 +18,4 @@ bodyParams:
 reqParams:
  url: "https://api.openai.com/v1/images/generations"
 ---
-{{selection}},by Tim Burton
+{{selection}}, coloring book

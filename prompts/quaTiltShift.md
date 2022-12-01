@@ -1,10 +1,10 @@
 ---
 PromptInfo:
- promptId: artTimBurton
- name: 🖼️ Generate a photo by Tim Burton
- description: select a text and photo with the style of Tim Burton will be generated using Dalle-2
+ promptId: quaTiltShift
+ name: 🖼️ Generate a Tilt-shift photo 
+ description: select a text and Tilt-shift photo about it will be generated using Dalle-2
  author: Prompt Engineering Guide
- tags: photo, dalle-2,art
+ tags: photo, dalle-2,quality
  version: 0.0.1
 config:
  append:
@@ -18,4 +18,4 @@ bodyParams:
 reqParams:
  url: "https://api.openai.com/v1/images/generations"
 ---
-{{selection}},by Tim Burton
+{{selection}}, Tilt-shift photography

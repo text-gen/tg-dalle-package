@@ -1,10 +1,10 @@
 ---
 PromptInfo:
- promptId: artTimBurton
- name: 🖼️ Generate a photo by Tim Burton
- description: select a text and photo with the style of Tim Burton will be generated using Dalle-2
+ promptId: modDetailed 
+ name: 🖼️ Generate a photo, with more precise details 
+ description:  Adds more precise details to the output, instead of simple art, but can also make the art overwhelming/over the top in small details.
  author: Prompt Engineering Guide
- tags: photo, dalle-2,art
+ tags: photo, dalle-2,modifier
  version: 0.0.1
 config:
  append:
@@ -18,4 +18,4 @@ bodyParams:
 reqParams:
  url: "https://api.openai.com/v1/images/generations"
 ---
-{{selection}},by Tim Burton
+{{selection}}, Detailed

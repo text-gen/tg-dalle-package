@@ -1,10 +1,11 @@
 ---
 PromptInfo:
- promptId: artTimBurton
- name: 🖼️ Generate a photo by Tim Burton
- description: select a text and photo with the style of Tim Burton will be generated using Dalle-2
+ promptId: ligFlare
+ name: 🖼️ Generate a Lens Flare photo
+ description: Adds a streak of light onto an image generation, creating the appearance of a bright light source being just outside of the frame.
+
  author: Prompt Engineering Guide
- tags: photo, dalle-2,art
+ tags: photo, dalle-2,lighting
  version: 0.0.1
 config:
  append:
@@ -18,4 +19,4 @@ bodyParams:
 reqParams:
  url: "https://api.openai.com/v1/images/generations"
 ---
-{{selection}},by Tim Burton
+{{selection}},Lens Flare
