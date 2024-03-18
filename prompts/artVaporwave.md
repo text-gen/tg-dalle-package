@@ -9,5 +9,7 @@ output: '\n![]({{requestResults.data.0.url}})'
 provider: 'custom'
 endpoint: 'https://api.openai.com/v1/images/generations'
 body: '{"n": 1, "size": "1024x1024", "prompt": "{{escp prompt}}"}'
+headers: "{\r      \"Content-Type\": \"application/json\",\r      \"authorization\": \"Bearer {{keys.openAIChat}}\"\r}"
+stream: false
 ---
 {{selection}}, vaporwave art
