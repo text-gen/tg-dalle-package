@@ -4,12 +4,15 @@ name: '🖼️ Generate a Studio Lighting photo'
 description: 'Dark/light background is imposed behind the subject, lighting accentuates details of the figure in the foreground.'
 author: 'Prompt Engineering Guide'
 tags: 'photo, dalle-2,lighting'
-version: '0.0.1'
-output: '\n![]({{requestResults.data.0.url}})'
-provider: 'custom'
-endpoint: 'https://api.openai.com/v1/images/generations'
-body: '{"n": 1, "size": "1024x1024", "prompt": "{{escp prompt}}"}'
-headers: "{\r      \"Content-Type\": \"application/json\",\r      \"authorization\": \"Bearer {{keys.openAIChat}}\"\r}"
+version: 0.0.1
 stream: false
+disableProvider: true
 ---
-{{selection}},Studio Lighting
+```handlebars
+{{#run "getPhoto" "r" "tg_selection"}}
+ {{selection}}, Studio Lighting
+{{/run}}
+```
+***
+***
+{{get "r"}}

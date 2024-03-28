@@ -4,12 +4,15 @@ name: '🖼️ Generate a Award-Winning Art photo'
 description: 'Images in the dataset with captions like “Award-Winning Art” are usually extremely creative and original, so using this modifier can greatly improve the quality and inventiveness of your generations.'
 author: 'Prompt Engineering Guide'
 tags: 'photo, dalle-2, modifier'
-version: '0.0.1'
-output: '\n![]({{requestResults.data.0.url}})'
-provider: 'custom'
-endpoint: 'https://api.openai.com/v1/images/generations'
-body: '{"n": 1, "size": "1024x1024", "prompt": "{{escp prompt}}"}'
-headers: "{\r      \"Content-Type\": \"application/json\",\r      \"authorization\": \"Bearer {{keys.openAIChat}}\"\r}"
+version: 0.0.1
 stream: false
+disableProvider: true
 ---
-{{selection}}, Award-Winning Art
+```handlebars
+{{#run "getPhoto" "r" "tg_selection"}}
+ {{selection}}, Award-Winning Art
+{{/run}}
+```
+***
+***
+{{get "r"}}

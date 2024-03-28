@@ -6,10 +6,8 @@ author:
 tags: 
 version: 0.0.1
 disableProvider: true
-commands:
-  - generate
 viewTypes:
-  - markdown
+  - none
 ---
 
 ```json:form

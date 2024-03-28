@@ -1,15 +1,21 @@
 ---
-promptId: 'artAnime'
-name: '🖼️ Generate a anime photo'
-description: 'select a text and photo with the style of anime will be generated using Dalle-2'
-author: 'Prompt Engineering Guide'
-tags: 'photo, dalle-2, art'
-version: '0.0.1'
-output: '\n![]({{requestResults.data.0.url}})'
-provider: 'custom'
-endpoint: 'https://api.openai.com/v1/images/generations'
-body: '{"n": 1, "size": "1024x1024", "prompt": "{{escp prompt}}"}'
-headers: "{\r      \"Content-Type\": \"application/json\",\r      \"authorization\": \"Bearer {{keys.openAIChat}}\"\r}"
+promptId: artAnime
+name: 🖼️ Generate a anime photo
+description: select a text and photo with the style of anime will be generated using Dalle-2
+author: Prompt Engineering Guide
+tags:
+  - photo
+  - dalle-2
+  - art
+version: 0.0.1
 stream: false
+disableProvider: true
 ---
-{{selection}}, anime
+```handlebars
+{{#run "getPhoto" "r" "tg_selection"}}
+ {{selection}}, anime
+{{/run}}
+```
+***
+***
+{{get "r"}}
