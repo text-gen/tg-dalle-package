@@ -6,7 +6,9 @@
 # Prompts 
 | Prompt   | Usage                                     |
 |----------|-------------------------------------------|
-| **getPhoto** | Generate a photo about the selected text. |
+| **getPhotos** | Generate 4 photos about the selected text. (dalle-e-3) |
+| **getPhoto** | Generate a photo about the selected text. (dalle-e-3) |
+| **getPhoto2** | Generate a photo about the selected text. (dalle-e-2) |
 |**art3D**|photo with the style of 3D art will be generated |
 |**artAnime**|photo with the style of anime will be generated |
 |**artBallPointPen**|photo with the style of ball-point pen will be generated |
